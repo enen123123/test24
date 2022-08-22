@@ -1,4 +1,4 @@
-git bash
+git bash使用
 
 创建文件夹
 $ mkdir testgit
