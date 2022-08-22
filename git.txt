@@ -1,0 +1,94 @@
+git bash
+
+创建文件夹
+$ mkdir testgit
+切换位置
+$ cd testgit
+初始化
+$ git init
+目录
+$ ls -a
+编写，修改脚本
+$ vi hello.py
+查看状态
+$ git status
+追踪文件	$ git add .   全部文件   拷贝工作区文件到暂存区
+$ git add hello.py
+邮箱
+$ git config --global user.email "1477227920@qq.com"
+姓名
+$ git config --global user.name "enen"
+提交文件	将暂存区stage文件提交master
+$ git commit -m '添加hello.py文件'
+修改
+$ git commit -m '修改hello.py文件'
+$ git commit -am '再次修改hello.py文件'
+
+文件删除(放入暂存区)
+$ rm hello.py
+暂存区重新提交
+$ git checkout -- hello.py
+文件删除(暂存区彻底删除，)
+$ git commit -m '删除hello.py文件'
+历史日志
+$ git log
+$ git log --oneline	简写
+回退某版本
+$ git reset -hard 加历史日志的版本号
+回退上一个
+$ git reset HEAD
+
+分支创建
+$ git branch dev
+查看分支
+$ git branch
+切换分支
+$ git checkout dev
+查看文件
+$ cat hello.py
+创建切换
+$ git checkout -b test
+删除
+$ git branch -d test
+合并分支
+$ git merge test
+当同一个文件被不同分支更改并提交，合并，会产生冲突
+<<<<<<< HEAD		本分支
+print 'hello-3'
+=======
+print 'hello-33'
+>>>>>>> test2		其他分支
+文件里会显示不同分支所书写的改变，可以手动删除多余部分解决冲突
+$ git add hello.py
+$ git commit -m '解决冲突'
+
+远程库：github版本
+本地库：本地创建的Git版本库
+lienlien@yeah.net
+github_en123
+git-enli
+
+邮箱： lienlien@yeah.net
+账户名： enen123123
+密码： 123456enenen
+http下载github中文件
+$ git clone https://github.com/enen123123/myrepository.git
+ssh下载
+$ git clone git@github.com:enen123123/myrepository.git
+创建ssh密钥对
+$ ssh-keygen -t rsa -C "lienlien@yeah.net"
+查看内容
+$ ls
+进入下载的库
+$ cd  myrepository/
+创建分支
+$ git checkout -b dev
+查看远程连接
+$ git remote -v
+上传
+$ git push origin dev
+
+
+
+
+
