@@ -64,13 +64,8 @@ $ git commit -m '解决冲突'
 
 远程库：github版本
 本地库：本地创建的Git版本库
-lienlien@yeah.net
-github_en123
-git-enli
 
-邮箱： lienlien@yeah.net
-账户名： enen123123
-密码： 123456enenen
+
 http下载github中文件
 $ git clone https://github.com/enen123123/myrepository.git
 ssh下载
